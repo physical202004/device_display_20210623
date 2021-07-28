@@ -37,7 +37,7 @@ C_DEPS += \
 # Each subdirectory must supply rules for building sources it contributes
 Sources/main.o: ../Sources/main.c
 	@echo 'Building file: $<'
-	@echo 'Executing target #20 $<'
+	@echo 'Executing target #40 $<'
 	@echo 'Invoking: Standard S32DS C Compiler'
 	arm-none-eabi-gcc "@Sources/main.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "Sources/main.o" "$<"
 	@echo 'Finished building: $<'
@@ -45,7 +45,7 @@ Sources/main.o: ../Sources/main.c
 
 Sources/rtos.o: ../Sources/rtos.c
 	@echo 'Building file: $<'
-	@echo 'Executing target #21 $<'
+	@echo 'Executing target #41 $<'
 	@echo 'Invoking: Standard S32DS C Compiler'
 	arm-none-eabi-gcc "@Sources/rtos.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "Sources/rtos.o" "$<"
 	@echo 'Finished building: $<'

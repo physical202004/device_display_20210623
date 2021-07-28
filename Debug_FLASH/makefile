@@ -2,7 +2,7 @@
 # Automatically-generated file. Do not edit!
 ################################################################################
 
-#Progress monitor hint: 21
+#Progress monitor hint: 61
 first : all
 -include ../makefile.init
 
@@ -25,7 +25,28 @@ RM := rm -rf
 -include SDK/rtos/FreeRTOS_S32K/Source/subdir.mk
 -include SDK/rtos/FreeRTOS_S32K/Source/portable/GCC/ARM_CM4F/subdir.mk
 -include SDK/rtos/FreeRTOS_S32K/Source/portable/MemMang/subdir.mk
+-include Sources/app/AgingManager/subdir.mk
+-include Sources/app/DisplayManager/subdir.mk
+-include Sources/app/EolManager/subdir.mk
+-include Sources/app/SystemManager/subdir.mk
+-include Sources/hal/Comm_Driver/subdir.mk
+-include Sources/hal/DS90UB948_Driver/subdir.mk
+-include Sources/hal/FOG_Driver/subdir.mk
+-include Sources/hal/LP8860_Driver/subdir.mk
+-include Sources/hal/SynapticsTP_Driver/subdir.mk
+-include Sources/hal/adc/subdir.mk
+-include Sources/hal/io/subdir.mk
 -include Sources/subdir.mk
+-include Sources/mcal/Core_McuBoard/subdir.mk
+-include Sources/rte/subdir.mk
+-include Sources/service/Communication/subdir.mk
+-include Sources/service/DevCtrl/subdir.mk
+-include Sources/service/Diagnose/subdir.mk
+-include Sources/service/Eep/subdir.mk
+-include Sources/service/Signal/subdir.mk
+-include Sources/service/Tools/subdir.mk
+-include Sources/service/Trace/subdir.mk
+-include Sources/service/Ver/subdir.mk
 -include objects.mk
 
 ifneq ($(MAKECMDGOALS),clean)
@@ -38,38 +59,38 @@ endif
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-project_ads_20210607_v00.elf \
+project_ads_20210623_v01.elf \
 
 EXECUTABLES_QUOTED += \
-"project_ads_20210607_v00.elf" \
+"project_ads_20210623_v01.elf" \
 
 EXECUTABLES_OS_FORMAT += \
-project_ads_20210607_v00.elf \
+project_ads_20210623_v01.elf \
 
 SECONDARY_SIZE += \
-project_ads_20210607_v00.siz \
+project_ads_20210623_v01.siz \
 
 SECONDARY_SIZE_QUOTED += \
-"project_ads_20210607_v00.siz" \
+"project_ads_20210623_v01.siz" \
 
 SECONDARY_SIZE_OS_FORMAT += \
-project_ads_20210607_v00.siz \
+project_ads_20210623_v01.siz \
 
 
 # All Target
-all: warning-messages explicit-dependencies project_ads_20210607_v00.elf secondary-outputs
+all: warning-messages explicit-dependencies project_ads_20210623_v01.elf secondary-outputs
 
 # Tool invocations
-project_ads_20210607_v00.elf: $(OBJS) C:/NXP/S32DS_ARM_v2018.R1/S32DS/S32SDK_S32K1xx_RTM_3.0.0/platform/devices/S32K144/linker/gcc/S32K144_64_flash.ld $(USER_OBJS)
+project_ads_20210623_v01.elf: $(OBJS) C:/NXP/S32DS_ARM_v2018.R1/S32DS/S32SDK_S32K1xx_RTM_3.0.0/platform/devices/S32K144/linker/gcc/S32K144_64_flash.ld $(USER_OBJS)
 	@echo 'Building target: $@'
-	@echo 'Executing target #22 $@'
+	@echo 'Executing target #62 $@'
 	@echo 'Invoking: Standard S32DS C Linker'
-	arm-none-eabi-gcc -o "project_ads_20210607_v00.elf" "@project_ads_20210607_v00.args"  $(USER_OBJS_QUOTED) $(LIBS_QUOTED)
+	arm-none-eabi-gcc -o "project_ads_20210623_v01.elf" "@project_ads_20210623_v01.args"  $(USER_OBJS_QUOTED) $(LIBS_QUOTED)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
-project_ads_20210607_v00.siz: $(EXECUTABLES)
-	@echo 'Executing target #23 $@'
+project_ads_20210623_v01.siz: $(EXECUTABLES)
+	@echo 'Executing target #63 $@'
 	@echo 'Invoking: Standard S32DS Print Size'
 	arm-none-eabi-size --format=berkeley $(EXECUTABLES)
 	@echo 'Finished building: $@'
@@ -77,7 +98,7 @@ project_ads_20210607_v00.siz: $(EXECUTABLES)
 
 # Other Targets
 clean:
-	-$(RM) ./*/*.d ./*/*/*/*/*/*/*.d ./*/*/*/*/*/*/*/*.d ./*/*/*/*/*.d ./*/*/*/*/*/*.d ./*/*/*/*.d  ./*/*.o ./*/*/*/*/*/*/*.o ./*/*/*/*/*/*/*/*.o ./*/*/*/*/*.o ./*/*/*/*/*/*.o ./*/*/*/*.o ./*/*/*.o  $(SECONDARY_SIZE_QUOTED) $(EXECUTABLES_QUOTED)
+	-$(RM) ./*/*/*/*.d ./*/*/*.d ./*/*.d ./*/*/*/*/*/*/*.d ./*/*/*/*/*/*/*/*.d ./*/*/*/*/*.d ./*/*/*/*/*/*.d  ./*/*/*/*.o ./*/*/*.o ./*/*.o ./*/*/*/*/*/*/*.o ./*/*/*/*/*/*/*/*.o ./*/*/*/*/*.o ./*/*/*/*/*/*.o  $(SECONDARY_SIZE_QUOTED) $(EXECUTABLES_QUOTED)
 	-@echo ' '
 
 secondary-outputs: $(SECONDARY_SIZE)

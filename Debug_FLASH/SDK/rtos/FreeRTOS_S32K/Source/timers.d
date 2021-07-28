@@ -1,7 +1,7 @@
 SDK/rtos/FreeRTOS_S32K/Source/timers.o: \
  C:/NXP/S32DS_ARM_v2018.R1/S32DS/S32SDK_S32K1xx_RTM_3.0.0/rtos/FreeRTOS_S32K/Source/timers.c \
  C:/NXP/S32DS_ARM_v2018.R1/S32DS/S32SDK_S32K1xx_RTM_3.0.0/rtos/FreeRTOS_S32K/Source/include/FreeRTOS.h \
- D:/work/projects/project_ads/project_ads_20210607_3_freertos_s32k144/project_ads_20210607_3_freertos_s32k144/Generated_Code/FreeRTOSConfig.h \
+ D:/work/projects/project_ads/project_ads_20210623_v01/Generated_Code/FreeRTOSConfig.h \
  C:/NXP/S32DS_ARM_v2018.R1/S32DS/S32SDK_S32K1xx_RTM_3.0.0/rtos/FreeRTOS_S32K/Source/include/projdefs.h \
  C:/NXP/S32DS_ARM_v2018.R1/S32DS/S32SDK_S32K1xx_RTM_3.0.0/rtos/FreeRTOS_S32K/Source/include/portable.h \
  C:/NXP/S32DS_ARM_v2018.R1/S32DS/S32SDK_S32K1xx_RTM_3.0.0/rtos/FreeRTOS_S32K/Source/include/deprecated_definitions.h \
@@ -15,7 +15,7 @@ SDK/rtos/FreeRTOS_S32K/Source/timers.o: \
 
 C:/NXP/S32DS_ARM_v2018.R1/S32DS/S32SDK_S32K1xx_RTM_3.0.0/rtos/FreeRTOS_S32K/Source/include/FreeRTOS.h:
 
-D:/work/projects/project_ads/project_ads_20210607_3_freertos_s32k144/project_ads_20210607_3_freertos_s32k144/Generated_Code/FreeRTOSConfig.h:
+D:/work/projects/project_ads/project_ads_20210623_v01/Generated_Code/FreeRTOSConfig.h:
 
 C:/NXP/S32DS_ARM_v2018.R1/S32DS/S32SDK_S32K1xx_RTM_3.0.0/rtos/FreeRTOS_S32K/Source/include/projdefs.h:
 

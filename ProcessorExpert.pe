@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PEproject>
   <Header>
-    <Name>project_ads_20210607_v00</Name>
+    <Name>project_ads_20210623_v01</Name>
     <SavedBy>B55288</SavedBy>
     <ModificationStamp>25</ModificationStamp>
     <Date>2015-10-14</Date>
@@ -4867,7 +4867,7 @@
         <ItemSymbol>ProjectComponentsCountChanged</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>1</Value>
+        <Value>2</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>ModuleName_ADC</ItemSymbol>

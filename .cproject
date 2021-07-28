@@ -5,6 +5,7 @@
 			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.exe.debug.1559595546" moduleId="org.eclipse.cdt.core.settings" name="Debug_FLASH">
 				<macros>
 					<stringMacro name="S32_SDK_PATH" type="VALUE_TEXT" value="${eclipse_home}../S32DS/S32SDK_S32K1xx_RTM_3.0.0"/>
+					<stringMacro name="PROJECT_KSDK_PATH" type="VALUE_TEXT" value="${ProcessorExpert_loc}/../../S32DS/S32SDK_S32K1xx_RTM_3.0.0"/>
 				</macros>
 				<externalSettings/>
 				<extensions>
@@ -28,7 +29,7 @@
 							<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.option.target.fpu.abi.783815641" name="Float ABI" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.option.target.fpu.abi" value="com.nxp.s32ds.cle.arm.mbs.arm32.bare.option.target.fpu.abi.hard" valueType="enumerated"/>
 							<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.option.target.fpu.unit.1728045030" name="FPU Type" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.option.target.fpu.unit" value="com.nxp.s32ds.cle.arm.mbs.arm32.bare.option.target.fpu.unit.fpv4spd16" valueType="enumerated"/>
 							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.targetPlatform.gnu.cross.2059865474" isAbstract="false" osList="all" superClass="cdt.managedbuild.targetPlatform.gnu.cross"/>
-							<builder buildPath="${workspace_loc:/project_ads_20210607_3_freertos_s32k144}/Debug_FLASH" id="com.freescale.s32ds.cross.gnu.builder.1053540006" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="FSL Make Builder" superClass="com.freescale.s32ds.cross.gnu.builder"/>
+							<builder buildPath="${workspace_loc:/project_ads_20210623_v01}/Debug_FLASH" id="com.freescale.s32ds.cross.gnu.builder.1053540006" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="FSL Make Builder" superClass="com.freescale.s32ds.cross.gnu.builder"/>
 							<tool id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.compiler.2044986164" name="Standard S32DS C Compiler" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.compiler">
 								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.option.optimization.level.23732241" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false" value="gnu.c.optimization.level.optimize" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.debugging.level.1678677024" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.max" valueType="enumerated"/>
@@ -37,7 +38,6 @@
 								<option id="com.freescale.s32ds.cross.gnu.tool.c.compiler.option.debugging.format.1857904393" name="Debug format" superClass="com.freescale.s32ds.cross.gnu.tool.c.compiler.option.debugging.format" useByScannerDiscovery="true"/>
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.compiler.option.target.libraries.929196910" name="Libraries support" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.compiler.option.target.libraries" useByScannerDiscovery="false" value="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.compiler.option.target.libraries.newlib_nano_noio" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.include.paths.502470945" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Sources}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Generated_Code}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${S32_SDK_PATH}/platform/devices/S32K144/include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${S32_SDK_PATH}/platform/devices/S32K144/startup&quot;"/>
@@ -48,6 +48,25 @@
 									<listOptionValue builtIn="false" value="&quot;${S32_SDK_PATH}/platform/drivers/src/clock/S32K1xx&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${S32_SDK_PATH}/rtos/FreeRTOS_S32K/Source/include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${S32_SDK_PATH}/rtos/FreeRTOS_S32K/Source/portable/GCC/ARM_CM4F&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Sources}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;D:\work\projects\project_ads\project_ads_20210623_v01&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/service}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/app}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/app/AgingManager}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/service/Inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/service/DevCtrl}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/mcal/Core_McuBoard}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:${WorkspaceDirPath}}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${CANoe_InstallDir}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/app/DisplayManager}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/app/EolManager}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/app/SystemManager}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/hal/adc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/hal/Comm_Driver}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/hal/DS90UB948_Driver}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/hal/FOG_Driver}&quot;"/>
 								</option>
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.compiler.option.target.sysroot.1913931667" name="Sysroot" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.compiler.option.target.sysroot" useByScannerDiscovery="false" value="--sysroot=&quot;${S32DS_ARM32_NEWLIB_DIR}&quot;" valueType="string"/>
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.compiler.option.target.mcpu.cortex-m41930726779" name="ARM family" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.compiler.option.target.mcpu" useByScannerDiscovery="true" value="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.compiler.option.target.mcpu.cortex-m4" valueType="enumerated"/>
@@ -118,7 +137,7 @@
 								<option defaultValue="gnu.c.optimization.level.none" id="com.freescale.s32ds.cross.gnu.tool.assembler.option.optimization.level.1456994502" name="Optimization Level" superClass="com.freescale.s32ds.cross.gnu.tool.assembler.option.optimization.level" useByScannerDiscovery="false" value="gnu.c.optimization.level.optimize" valueType="enumerated"/>
 								<option id="com.freescale.s32ds.cross.gnu.tool.assembler.option.debugging.level.928582166" name="Debug Level" superClass="com.freescale.s32ds.cross.gnu.tool.assembler.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.assembler.option.target.libraries.1894007476" name="Libraries support" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.assembler.option.target.libraries" value="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.assembler.option.target.libraries.newlib_nano_noio" valueType="enumerated"/>
-								<option id="gnu.both.asm.option.include.paths.1715107341" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+								<option id="gnu.both.asm.option.include.paths.1715107341" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Sources}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Generated_Code}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${S32_SDK_PATH}/platform/devices/S32K144/include&quot;"/>
@@ -127,6 +146,19 @@
 									<listOptionValue builtIn="false" value="&quot;${S32_SDK_PATH}/platform/devices/S32K144/startup&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${S32_SDK_PATH}/platform/devices&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${S32_SDK_PATH}/platform/drivers/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;D:\work\projects\project_ads\project_ads_20210623_v01&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/app}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:${WorkspaceDirPath}}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/app/AgingManager}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/app/DisplayManager}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/app/EolManager}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/app/SystemManager}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/hal/adc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/hal/Comm_Driver}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/hal/DS90UB948_Driver}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/hal/FOG_Driver}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/SDK1/headers}&quot;"/>
 								</option>
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.assembler.option.target.sysroot.1851944229" name="Sysroot" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.assembler.option.target.sysroot" value="--sysroot=&quot;${S32DS_ARM32_NEWLIB_DIR}&quot;" valueType="string"/>
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.assembler.option.target.mcpu.cortex-m41027872250" name="ARM family" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.assembler.option.target.mcpu" value="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.assembler.option.target.mcpu.cortex-m4" valueType="enumerated"/>
@@ -155,14 +187,124 @@
 							<tool id="com.freescale.s32ds.cross.gnu.disassembler.502996271" name="Standard S32DS Disassembler" superClass="com.freescale.s32ds.cross.gnu.disassembler"/>
 						</toolChain>
 					</folderInfo>
+					<folderInfo id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.exe.debug.1559595546.815427966" name="/" resourcePath="Sources">
+						<toolChain id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.toolchain.debug.294738878" name="ARM Bare-Metal 32-bit Target Binary Toolchain" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.toolchain.debug" unusedChildren="">
+							<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.option.addtools.printsize.1705632765.1313191800" name="Print size" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.option.addtools.printsize.1705632765"/>
+							<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.option.target.libraries.1409438347.759479609" name="Libraries support" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.option.target.libraries.1409438347"/>
+							<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.option.target.mcpu.cortex-m4842350448.1066944636" name="ARM family" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.option.target.mcpu.cortex-m4842350448"/>
+							<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.option.target.fpu.abi.783815641.2123568650" name="Float ABI" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.option.target.fpu.abi.783815641"/>
+							<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.option.target.fpu.unit.1728045030.478845627" name="FPU Type" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.option.target.fpu.unit.1728045030"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.targetPlatform.gnu.cross" isAbstract="false" osList="all" superClass="cdt.managedbuild.targetPlatform.gnu.cross"/>
+							<tool id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.compiler.1314104294" name="Standard S32DS C Compiler" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.compiler.2044986164">
+								<option id="gnu.c.compiler.option.include.paths.614038406" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Generated_Code}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32_SDK_PATH}/platform/devices/S32K144/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32_SDK_PATH}/platform/devices/S32K144/startup&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32_SDK_PATH}/platform/devices/S32K144&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32_SDK_PATH}/platform/devices/common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32_SDK_PATH}/platform/devices&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32_SDK_PATH}/platform/drivers/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32_SDK_PATH}/platform/drivers/src/clock/S32K1xx&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32_SDK_PATH}/rtos/FreeRTOS_S32K/Source/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32_SDK_PATH}/rtos/FreeRTOS_S32K/Source/portable/GCC/ARM_CM4F&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Sources}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;D:\work\projects\project_ads\project_ads_20210623_v01&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/service}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/app}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/app/AgingManager}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/service/Inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/service/DevCtrl}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/mcal/Core_McuBoard}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:${WorkspaceDirPath}}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${CANoe_InstallDir}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/app/DisplayManager}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/app/EolManager}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/app/SystemManager}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/hal/adc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/hal/Comm_Driver}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/hal/DS90UB948_Driver}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/hal/FOG_Driver}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/hal/io}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/hal/LP8860_Driver}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/hal/ntc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/hal/SynapticsTP_Driver}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/mcal/Basicdriver/Inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/mcal/Basicdriver_cfg}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/rte}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/service/Communication}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/service/Diagnose}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/service/Eep}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/service/Signal}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/service/Tools}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/service/Ver}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/service/Trace}&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1103134124" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.cpp.compiler.1496682456" name="Standard S32DS C++ Compiler" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.cpp.compiler.334661526"/>
+							<tool id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.318218122" name="Standard S32DS C Linker" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.765489485"/>
+							<tool id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.cpp.linker.987828110" name="Standard S32DS C++ Linker" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.cpp.linker.642275816"/>
+							<tool id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.archiver.845668401" name="Standard S32DS Archiver" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.archiver.1372285478"/>
+							<tool id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.assembler.40512526" name="Standard S32DS Assembler" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.assembler.425116781">
+								<option id="gnu.both.asm.option.include.paths.201894870" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Sources}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Generated_Code}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32_SDK_PATH}/platform/devices/S32K144/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32_SDK_PATH}/platform/devices/S32K144&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32_SDK_PATH}/platform/devices/common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32_SDK_PATH}/platform/devices/S32K144/startup&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32_SDK_PATH}/platform/devices&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32_SDK_PATH}/platform/drivers/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;D:\work\projects\project_ads\project_ads_20210623_v01&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/app}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:${WorkspaceDirPath}}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/app/AgingManager}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/app/DisplayManager}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/app/EolManager}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/app/SystemManager}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/hal/adc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/hal/Comm_Driver}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/hal/DS90UB948_Driver}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/hal/FOG_Driver}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/hal/io}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/hal/LP8860_Driver}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/hal/ntc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/hal/SynapticsTP_Driver}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/mcal/Basicdriver/Inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/mcal/Basicdriver_cfg}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/mcal/Core_McuBoard}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/rte}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/service/Communication}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/service/DevCtrl}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/service/Diagnose}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/service/Eep}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/service/Inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/service/Signal}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/service/Tools}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/service/Ver}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/service/Trace}&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1471193214" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="com.freescale.s32ds.cross.gnu.tool.assembler.inputType.asmfile.607063268" superClass="com.freescale.s32ds.cross.gnu.tool.assembler.inputType.asmfile"/>
+							</tool>
+							<tool id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.createflash.452815241" name="Standard S32DS Create Flash Image" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.createflash.721166105"/>
+							<tool id="com.freescale.s32ds.cross.gnu.tool.createlisting.714144442" name="Standard S32DS Create Listing" superClass="com.freescale.s32ds.cross.gnu.tool.createlisting.1426369270"/>
+							<tool id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.printsize.572088526" name="Standard S32DS Print Size" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.printsize.1239832028"/>
+							<tool id="com.freescale.s32ds.cross.gnu.c.preprocessor.1351894487" name="Standard S32DS C Preprocessor" superClass="com.freescale.s32ds.cross.gnu.c.preprocessor.1180004426"/>
+							<tool id="com.freescale.s32ds.cross.gnu.cpp.preprocessor.272468667" name="Standard S32DS C++ Preprocessor" superClass="com.freescale.s32ds.cross.gnu.cpp.preprocessor.345215603"/>
+							<tool id="com.freescale.s32ds.cross.gnu.disassembler.851522436" name="Standard S32DS Disassembler" superClass="com.freescale.s32ds.cross.gnu.disassembler.502996271"/>
+						</toolChain>
+					</folderInfo>
 					<fileInfo id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.exe.debug.1559595546.Project_Settings/Debugger/test_Release.launch" name="test_Release.launch" rcbsApplicability="disable" resourcePath="Project_Settings/Debugger/test_Release.launch" toolsToInvoke=""/>
 					<fileInfo id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.exe.debug.1559595546.Project_Settings/Debugger/test_Debug_RAM.launch" name="test_Debug_RAM.launch" rcbsApplicability="disable" resourcePath="Project_Settings/Debugger/test_Debug_RAM.launch" toolsToInvoke=""/>
 					<sourceEntries>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="SDK"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Generated_Code"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Project_Settings"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Project_Settings"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="SDK"/>
+						<entry excluding="mcal/Basicdriver_cfg|mcal/Basicdriver" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -172,6 +314,7 @@
 			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.exe.debug.1755192844" moduleId="org.eclipse.cdt.core.settings" name="Debug_RAM">
 				<macros>
 					<stringMacro name="S32_SDK_PATH" type="VALUE_TEXT" value="${eclipse_home}../S32DS/S32SDK_S32K1xx_RTM_3.0.0"/>
+					<stringMacro name="PROJECT_KSDK_PATH" type="VALUE_TEXT" value="${ProcessorExpert_loc}/../../S32DS/S32SDK_S32K1xx_RTM_3.0.0"/>
 				</macros>
 				<externalSettings/>
 				<extensions>
@@ -195,7 +338,7 @@
 							<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.option.target.fpu.abi.783815641" name="Float ABI" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.option.target.fpu.abi" value="com.nxp.s32ds.cle.arm.mbs.arm32.bare.option.target.fpu.abi.hard" valueType="enumerated"/>
 							<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.option.target.fpu.unit.1728045030" name="FPU Type" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.option.target.fpu.unit" value="com.nxp.s32ds.cle.arm.mbs.arm32.bare.option.target.fpu.unit.fpv4spd16" valueType="enumerated"/>
 							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.targetPlatform.gnu.cross.2059865474" isAbstract="false" osList="all" superClass="cdt.managedbuild.targetPlatform.gnu.cross"/>
-							<builder buildPath="${workspace_loc:/project_ads_20210607_3_freertos_s32k144}/Debug_RAM" id="com.freescale.s32ds.cross.gnu.builder.1053540006" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="FSL Make Builder" superClass="com.freescale.s32ds.cross.gnu.builder"/>
+							<builder buildPath="${workspace_loc:/project_ads_20210623_v01}/Debug_RAM" id="com.freescale.s32ds.cross.gnu.builder.1053540006" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="FSL Make Builder" superClass="com.freescale.s32ds.cross.gnu.builder"/>
 							<tool id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.compiler.2044986164" name="Standard S32DS C Compiler" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.compiler">
 								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.option.optimization.level.23732241" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false" value="gnu.c.optimization.level.optimize" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.debugging.level.1678677024" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.max" valueType="enumerated"/>
@@ -215,6 +358,19 @@
 									<listOptionValue builtIn="false" value="&quot;${S32_SDK_PATH}/platform/drivers/src/clock/S32K1xx&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${S32_SDK_PATH}/rtos/FreeRTOS_S32K/Source/include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${S32_SDK_PATH}/rtos/FreeRTOS_S32K/Source/portable/GCC/ARM_CM4F&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;D:\work\projects\project_ads\project_ads_20210623_v01&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/app}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:${WorkspaceDirPath}}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/app/AgingManager}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/app/DisplayManager}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/app/EolManager}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/app/SystemManager}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/hal/adc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/hal/Comm_Driver}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/hal/DS90UB948_Driver}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/hal/FOG_Driver}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/SDK1/headers}&quot;"/>
 								</option>
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.compiler.option.target.sysroot.1913931667" name="Sysroot" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.compiler.option.target.sysroot" useByScannerDiscovery="false" value="--sysroot=&quot;${S32DS_ARM32_NEWLIB_DIR}&quot;" valueType="string"/>
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.compiler.option.target.mcpu.cortex-m41930726779" name="ARM family" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.compiler.option.target.mcpu" useByScannerDiscovery="true" value="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.compiler.option.target.mcpu.cortex-m4" valueType="enumerated"/>
@@ -294,6 +450,19 @@
 									<listOptionValue builtIn="false" value="&quot;${S32_SDK_PATH}/platform/devices/S32K144/startup&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${S32_SDK_PATH}/platform/devices&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${S32_SDK_PATH}/platform/drivers/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;D:\work\projects\project_ads\project_ads_20210623_v01&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/app}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:${WorkspaceDirPath}}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/app/AgingManager}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/app/DisplayManager}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/app/EolManager}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/app/SystemManager}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/hal/adc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/hal/Comm_Driver}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/hal/DS90UB948_Driver}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/hal/FOG_Driver}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/SDK1/headers}&quot;"/>
 								</option>
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.assembler.option.target.sysroot.1851944229" name="Sysroot" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.assembler.option.target.sysroot" value="--sysroot=&quot;${S32DS_ARM32_NEWLIB_DIR}&quot;" valueType="string"/>
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.assembler.option.target.mcpu.cortex-m41027872250" name="ARM family" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.assembler.option.target.mcpu" value="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.assembler.option.target.mcpu.cortex-m4" valueType="enumerated"/>
@@ -321,14 +490,121 @@
 							<tool id="com.freescale.s32ds.cross.gnu.disassembler.502996271" name="Standard S32DS Disassembler" superClass="com.freescale.s32ds.cross.gnu.disassembler"/>
 						</toolChain>
 					</folderInfo>
+					<folderInfo id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.exe.debug.1755192844.1586276594" name="/" resourcePath="Sources">
+						<toolChain id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.toolchain.debug.1684863810" name="ARM Bare-Metal 32-bit Target Binary Toolchain" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.toolchain.debug" unusedChildren="">
+							<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.option.addtools.printsize.1705632765.1720021565" name="Print size" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.option.addtools.printsize.1705632765"/>
+							<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.option.target.libraries.1409438347.1403064284" name="Libraries support" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.option.target.libraries.1409438347"/>
+							<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.option.target.mcpu.cortex-m4842350448.690648013" name="ARM family" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.option.target.mcpu.cortex-m4842350448"/>
+							<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.option.target.fpu.abi.783815641.402562030" name="Float ABI" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.option.target.fpu.abi.783815641"/>
+							<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.option.target.fpu.unit.1728045030.1013467912" name="FPU Type" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.option.target.fpu.unit.1728045030"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.targetPlatform.gnu.cross" isAbstract="false" osList="all" superClass="cdt.managedbuild.targetPlatform.gnu.cross"/>
+							<tool id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.compiler.2077625243" name="Standard S32DS C Compiler" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.compiler.2044986164">
+								<option id="gnu.c.compiler.option.include.paths.1235315242" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Sources}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Generated_Code}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32_SDK_PATH}/platform/devices/S32K144/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32_SDK_PATH}/platform/devices/S32K144/startup&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32_SDK_PATH}/platform/devices/S32K144&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32_SDK_PATH}/platform/devices/common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32_SDK_PATH}/platform/devices&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32_SDK_PATH}/platform/drivers/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32_SDK_PATH}/platform/drivers/src/clock/S32K1xx&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32_SDK_PATH}/rtos/FreeRTOS_S32K/Source/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32_SDK_PATH}/rtos/FreeRTOS_S32K/Source/portable/GCC/ARM_CM4F&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;D:\work\projects\project_ads\project_ads_20210623_v01&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/app}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:${WorkspaceDirPath}}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/app/AgingManager}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/app/DisplayManager}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/app/EolManager}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/app/SystemManager}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/hal/adc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/hal/Comm_Driver}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/hal/DS90UB948_Driver}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/hal/FOG_Driver}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/hal/io}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/hal/LP8860_Driver}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/hal/ntc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/hal/SynapticsTP_Driver}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/mcal/Basicdriver/Inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/mcal/Basicdriver_cfg}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/mcal/Core_McuBoard}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/rte}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/service/Communication}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/service/DevCtrl}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/service/Diagnose}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/service/Eep}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/service/Inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/service/Signal}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/service/Tools}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/service/Ver}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/service/Trace}&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1720242774" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.cpp.compiler.349044522" name="Standard S32DS C++ Compiler" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.cpp.compiler.334661526"/>
+							<tool id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.832654328" name="Standard S32DS C Linker" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.765489485"/>
+							<tool id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.cpp.linker.1584820159" name="Standard S32DS C++ Linker" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.cpp.linker.642275816"/>
+							<tool id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.archiver.506257073" name="Standard S32DS Archiver" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.archiver.1372285478"/>
+							<tool id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.assembler.1806433029" name="Standard S32DS Assembler" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.assembler.425116781">
+								<option id="gnu.both.asm.option.include.paths.762006876" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Sources}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Generated_Code}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32_SDK_PATH}/platform/devices/S32K144/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32_SDK_PATH}/platform/devices/S32K144&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32_SDK_PATH}/platform/devices/common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32_SDK_PATH}/platform/devices/S32K144/startup&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32_SDK_PATH}/platform/devices&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${S32_SDK_PATH}/platform/drivers/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;D:\work\projects\project_ads\project_ads_20210623_v01&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/app}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:${WorkspaceDirPath}}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/app/AgingManager}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/app/DisplayManager}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/app/EolManager}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/app/SystemManager}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/hal/adc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/hal/Comm_Driver}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/hal/DS90UB948_Driver}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/hal/FOG_Driver}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/hal/io}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/hal/LP8860_Driver}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/hal/ntc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/hal/SynapticsTP_Driver}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/mcal/Basicdriver/Inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/mcal/Basicdriver_cfg}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/mcal/Core_McuBoard}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/rte}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/service/Communication}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/service/DevCtrl}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/service/Diagnose}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/service/Eep}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/service/Inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/service/Signal}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/service/Tools}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/service/Ver}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/project_ads_20210623_v01/Sources/service/Trace}&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1769434713" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="com.freescale.s32ds.cross.gnu.tool.assembler.inputType.asmfile.159602537" superClass="com.freescale.s32ds.cross.gnu.tool.assembler.inputType.asmfile"/>
+							</tool>
+							<tool id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.createflash.1992414599" name="Standard S32DS Create Flash Image" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.createflash.721166105"/>
+							<tool id="com.freescale.s32ds.cross.gnu.tool.createlisting.1724938562" name="Standard S32DS Create Listing" superClass="com.freescale.s32ds.cross.gnu.tool.createlisting.1426369270"/>
+							<tool id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.printsize.1048171857" name="Standard S32DS Print Size" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.printsize.1239832028"/>
+							<tool id="com.freescale.s32ds.cross.gnu.c.preprocessor.24743789" name="Standard S32DS C Preprocessor" superClass="com.freescale.s32ds.cross.gnu.c.preprocessor.1180004426"/>
+							<tool id="com.freescale.s32ds.cross.gnu.cpp.preprocessor.1526696324" name="Standard S32DS C++ Preprocessor" superClass="com.freescale.s32ds.cross.gnu.cpp.preprocessor.345215603"/>
+							<tool id="com.freescale.s32ds.cross.gnu.disassembler.705233283" name="Standard S32DS Disassembler" superClass="com.freescale.s32ds.cross.gnu.disassembler.502996271"/>
+						</toolChain>
+					</folderInfo>
 					<fileInfo id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.exe.debug.1755192844.Project_Settings/Debugger/test_Release.launch" name="test_Release.launch" rcbsApplicability="disable" resourcePath="Project_Settings/Debugger/test_Release.launch" toolsToInvoke=""/>
 					<fileInfo id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.exe.debug.1755192844.Project_Settings/Debugger/test_Debug_RAM.launch" name="test_Debug_RAM.launch" rcbsApplicability="disable" resourcePath="Project_Settings/Debugger/test_Debug_RAM.launch" toolsToInvoke=""/>
 					<sourceEntries>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="SDK"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Generated_Code"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Project_Settings"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Project_Settings"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="SDK"/>
+						<entry excluding="mcal/Basicdriver_cfg|mcal/Basicdriver" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -336,26 +612,33 @@
 		</cconfiguration>
 	</storageModule>
 	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-		<project id="project_ads_20210607_3_freertos_s32k144.com.nxp.s32ds.cle.arm.mbs.arm32.bare.exe.654534215" name="ARM32 Executable" projectType="com.nxp.s32ds.cle.arm.mbs.arm32.bare.exe"/>
+		<project id="project_ads_20210623_v01.com.nxp.s32ds.cle.arm.mbs.arm32.bare.exe.654534215" name="ARM32 Executable" projectType="com.nxp.s32ds.cle.arm.mbs.arm32.bare.exe"/>
 	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Debug_FLASH">
+			<resource resourceType="PROJECT" workspacePath="/project_ads_20210623_v01"/>
+		</configuration>
+		<configuration configurationName="Debug_RAM">
+			<resource resourceType="PROJECT" workspacePath="/project_ads_20210623_v01"/>
+		</configuration>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.embsys" parent_project="true" register_architecture="cortex-m4" register_board="---  none ---" register_chip="S32K144" register_core="" register_vendor="Freescale"/>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
 	<storageModule moduleId="scannerConfiguration">
 		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
 		<scannerConfigBuildInfo instanceId="com.nxp.s32ds.cle.arm.mbs.arm32.bare.exe.debug.1559595546;com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.compiler.2044986164;cdt.managedbuild.tool.gnu.c.compiler.input.1827702212">
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
 		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.nxp.s32ds.cle.arm.mbs.arm32.bare.exe.debug.1755192844;com.nxp.s32ds.cle.arm.mbs.arm32.bare.exe.debug.1755192844.;com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.compiler.2044986164;cdt.managedbuild.tool.gnu.c.compiler.input.1827702212">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
 		<scannerConfigBuildInfo instanceId="com.nxp.s32ds.cle.arm.mbs.arm32.bare.exe.debug.1755192844;com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.compiler.2044986164;cdt.managedbuild.tool.gnu.c.compiler.input.1827702212">
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
 		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.nxp.s32ds.cle.arm.mbs.arm32.bare.exe.debug.1559595546;com.nxp.s32ds.cle.arm.mbs.arm32.bare.exe.debug.1559595546.;com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.compiler.2044986164;cdt.managedbuild.tool.gnu.c.compiler.input.1827702212">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
 	</storageModule>
-	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
-	<storageModule moduleId="refreshScope" versionNumber="2">
-		<configuration configurationName="Debug_FLASH">
-			<resource resourceType="PROJECT" workspacePath="/project_ads_20210607_3_freertos_s32k144"/>
-		</configuration>
-		<configuration configurationName="Debug_RAM">
-			<resource resourceType="PROJECT" workspacePath="/project_ads_20210607_3_freertos_s32k144"/>
-		</configuration>
-	</storageModule>
-	<storageModule moduleId="org.eclipse.embsys" parent_project="true" register_architecture="cortex-m4" register_board="--- none ---" register_chip="S32K144" register_core="" register_vendor="Freescale"/>
-	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
 </cproject>

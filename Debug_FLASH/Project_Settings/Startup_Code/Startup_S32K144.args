@@ -1,12 +1,24 @@
 -c
--I"D:/work/projects/project_ads/project_ads_20210607_v00/Sources"
--I"D:/work/projects/project_ads/project_ads_20210607_v00/Generated_Code"
+-I"D:/work/projects/project_ads/project_ads_20210623_v01/Sources"
+-I"D:/work/projects/project_ads/project_ads_20210623_v01/Generated_Code"
 -I"C:/NXP/S32DS_ARM_v2018.R1/S32DS/S32SDK_S32K1xx_RTM_3.0.0/platform/devices/S32K144/include"
 -I"C:/NXP/S32DS_ARM_v2018.R1/S32DS/S32SDK_S32K1xx_RTM_3.0.0/platform/devices/S32K144"
 -I"C:/NXP/S32DS_ARM_v2018.R1/S32DS/S32SDK_S32K1xx_RTM_3.0.0/platform/devices/common"
 -I"C:/NXP/S32DS_ARM_v2018.R1/S32DS/S32SDK_S32K1xx_RTM_3.0.0/platform/devices/S32K144/startup"
 -I"C:/NXP/S32DS_ARM_v2018.R1/S32DS/S32SDK_S32K1xx_RTM_3.0.0/platform/devices"
 -I"C:/NXP/S32DS_ARM_v2018.R1/S32DS/S32SDK_S32K1xx_RTM_3.0.0/platform/drivers/inc"
+-I"D:/work/projects/project_ads/project_ads_20210623_v01"
+-I"D:/work/projects/project_ads/project_ads_20210623_v01/Sources"
+-I"D:/work/projects/project_ads/project_ads_20210623_v01/Sources/app"
+-I"D:/work/projects/project_ads/project_ads_20210623_v01/Sources/app/AgingManager"
+-I"D:/work/projects/project_ads/project_ads_20210623_v01/Sources/app/DisplayManager"
+-I"D:/work/projects/project_ads/project_ads_20210623_v01/Sources/app/EolManager"
+-I"D:/work/projects/project_ads/project_ads_20210623_v01/Sources/app/SystemManager"
+-I"D:/work/projects/project_ads/project_ads_20210623_v01/Sources/hal/adc"
+-I"D:/work/projects/project_ads/project_ads_20210623_v01/Sources/hal/Comm_Driver"
+-I"D:/work/projects/project_ads/project_ads_20210623_v01/Sources/hal/DS90UB948_Driver"
+-I"D:/work/projects/project_ads/project_ads_20210623_v01/Sources/hal/FOG_Driver"
+-I"D:/work/projects/project_ads/project_ads_20210623_v01/SDK1/headers"
 -x assembler-with-cpp
 -DSTART_FROM_FLASH
 -DUSING_OS_FREERTOS

@@ -61,5 +61,26 @@ SDK/platform/drivers/src/pins \
 SDK/rtos/FreeRTOS_S32K/Source \
 SDK/rtos/FreeRTOS_S32K/Source/portable/GCC/ARM_CM4F \
 SDK/rtos/FreeRTOS_S32K/Source/portable/MemMang \
+Sources/app/AgingManager \
+Sources/app/DisplayManager \
+Sources/app/EolManager \
+Sources/app/SystemManager \
+Sources/hal/Comm_Driver \
+Sources/hal/DS90UB948_Driver \
+Sources/hal/FOG_Driver \
+Sources/hal/LP8860_Driver \
+Sources/hal/SynapticsTP_Driver \
+Sources/hal/adc \
+Sources/hal/io \
 Sources \
+Sources/mcal/Core_McuBoard \
+Sources/rte \
+Sources/service/Communication \
+Sources/service/DevCtrl \
+Sources/service/Diagnose \
+Sources/service/Eep \
+Sources/service/Signal \
+Sources/service/Tools \
+Sources/service/Trace \
+Sources/service/Ver \
 
